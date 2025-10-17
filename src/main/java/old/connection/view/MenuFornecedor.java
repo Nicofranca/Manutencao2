@@ -1,6 +1,6 @@
 package old.connection.view;
 
-import domain.model.Forncedor;
+import domain.model.Fornecedor;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class MenuFornecedor {
 
     Scanner sc = new Scanner(System.in);
 
-    public Forncedor cadastrarFornecedor(){
+    public Fornecedor cadastrarFornecedor(){
 
         System.out.println("Insira o nome do Fornecedor: ");
         String nome = sc.nextLine();
@@ -16,7 +16,7 @@ public class MenuFornecedor {
         System.out.println("Insira o CNPJ do fornecedor: ");
         String cnpj = sc.nextLine();
 
-        var novoFornecedor = new Forncedor(nome, cnpj);
+        var novoFornecedor = new Fornecedor(nome, cnpj);
 
         return novoFornecedor;
     }

@@ -1,14 +1,14 @@
 package old.connection.repository;
 
-import old.connection.Conexao;
-import domain.model.Forncedor;
+import infraestructure.connection.Conexao;
+import domain.model.Fornecedor;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class FornecedorRepository {
-    public void cadastrarFornecedor(Forncedor forncedor) throws SQLException {
+    public void cadastrarFornecedor(Fornecedor forncedor) throws SQLException {
         String query = "INSERT INTO Fornecedor (nome, cnpj) VALUES (?, ?)";
 
         try(Connection conn = Conexao.conectar();

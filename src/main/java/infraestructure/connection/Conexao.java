@@ -1,4 +1,4 @@
-package old.connection;
+package infraestructure.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
